@@ -1,0 +1,99 @@
+# Ignore system and backup files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore application-specific files and directories
+/node_modules
+/build
+/dist
+/.venv
+/.idea
+/.vscode
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore package manager files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore images and media files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.svg
+*.webp
+
+# Ignore archives and compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Ignore dependencies
+/.bundle
+/vendor
+/bower_components
+
+# Ignore IDE and code editor files
+/.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Jekyll build folder
+_site/
+
+# Ignore macOS folder attributes
+.AppleDouble
+.DS_Store?
+
+# Ignore Yarn Integrity file
+.yarn-integrity
+
+# Ignore editorconfig files
+.editorconfig
+
+# Ignore Windows folder config file
+desktop.ini
+
+# Ignore SQLite database
+*.sqlite3
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore logs and databases for Python
+*.log
+db.sqlite3
+
+# Ignore pipenv virtual environment
+Pipfile.lock
+
+# Ignore poetry virtual environment
+.poetry/
+__pypackages__/
