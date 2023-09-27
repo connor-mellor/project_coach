@@ -1,0 +1,80 @@
+:root {
+  --white: #fff;
+  --black: #0e0e0e;
+  --celadon: #a7ce97;
+  --office-green: #437d21;
+}
+
+/* Reset some default browser styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a basic font and background color to the entire page */
+body {
+  font-family: sans-serif;
+  background-color: lightgray;
+}
+
+/* Apply a default border box sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style links */
+a {
+  text-decoration: none;
+  color: #0078d4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style headings */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+/* Responsive design: adjust layout for smaller screens */
+@media (max-width: 768px) {
+}
+
+.carousel-inner img {
+  aspect-ratio: 2/1;
+}
+
+#heroCarousel {
+  height: 400px;
+}
+
+.logo-container {
+  height: auto;
+  width: 64px;
+}
+.logo-container > img {
+  height: auto;
+  width: 100%;
+}
+
+.navbar {
+  background-color: var(--white) !important;
+}
+
+footer {
+  background-color: var(--celadon);
+  padding: 10px;
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+}
