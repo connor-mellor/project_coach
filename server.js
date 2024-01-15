@@ -26,14 +26,3 @@ app.get("/", (req, res) => {
   res.render("index"); // Render the "index" view
 });
 
-app.get("/AboutMe", (req, res) => {
-  res.render("aboutme"); // Render the "index" view
-});
-
-app.get("/Services", (req, res) => {
-  res.render("services"); // Render the "index" view
-});
-
-app.get("/Contact", (req, res) => {
-  res.render("contact"); // Render the "index" view
-});
