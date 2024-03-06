@@ -2,6 +2,7 @@
 :root {
   /* pallete */
   --white: #fff;
+  --light-gray: #dddddd;
   --black: #0e0e0e;
   --black-opacity-30: #0e0e0e30;
   --celadon: #a7ce97;
@@ -50,27 +51,57 @@ h3 {
   z-index: 1;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 img {
   height: 100%;
   width: auto;
+}
+
+header {
+  display: unset;
 }
 
 nav.navbar,
 footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background: var(--celadon);
-  padding: var(--small);
+  padding: 0;
   z-index: 1;
 }
 nav.navbar {
   background: var(--black-opacity-30);
-  position: fixed;
+  position: sticky;
   width: 100vw;
+  top: 0;
 }
 nav.navbar div {
   width: 50px;
   height: auto;
+}
+nav.navbar .promotion-container,
+nav.navbar .promotion-container p {
+  width: 100%;
+}
+nav.navbar .promotion-container {
+  background: #64ff8d;
+  padding: 0 var(--small);
+}
+nav.navbar .promotion-container p {
+  font-weight: 600;
+  text-align: center;
+}
+
+.carousel,
+.image-text-block,
+.contact-form,
+.instagram-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .get-in-touch {
@@ -106,7 +137,28 @@ nav.navbar div {
   padding: var(--small);
 }
 
+.instagram-container,
+.instagram-container .instagram-media {
+  width: 100%;
+}
+.instagram-container {
+  padding: 0 var(--medium);
+}
+.instagram-container .instagram-media {
+  min-width: 0!important;
+  border: none!important;
+}
+
+footer {
+  font-weight: 600;
+  padding: var(--small);
+  align-items: center;
+}
+
 @media (min-width: 720px) {
+  p {
+    font-size: 1rem;
+  }
   .image-text-block {
     flex-direction: row;
     align-items: center;
